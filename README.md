@@ -27,6 +27,8 @@ Features
 
 📂 Folder Structure
 
+```
+
 anime-tracker/
 │
 ├── public/                  # Static assets (CSS, JS, images)
@@ -45,6 +47,7 @@ anime-tracker/
 │   └── database.sqlite
 ├── README.md
 └── .gitignore
+```
 
 
 📄 API Usage (Jikan)
