@@ -72,6 +72,7 @@ Returns JSON:
   ]
 }
 
+```
 
 🧢 Future Features
 
@@ -86,5 +87,6 @@ Returns JSON:
 # PHP version
 php -S localhost:8000
 # Open http://localhost:8000/index.html
-``
+```
+
 
