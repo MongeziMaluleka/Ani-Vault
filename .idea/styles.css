@@ -1,0 +1,73 @@
+ /* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a; /* Dark blue background */
+    color: #e2e8f0;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+    background: #4f46e5;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+}
+
+/* Animations for UI elements */
+.anime-card {
+    transition: all 0.3s ease;
+}
+.anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+}
+
+/* Netflix-style card hover effect */
+.netflix-card {
+    transition: all 0.3s ease;
+}
+.netflix-card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Tab animations */
+.tab-indicator {
+    transition: all 0.3s ease;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.loading-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+/* Toast notification animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.toast {
+    animation: slideIn 0.3s ease forwards;
+}
