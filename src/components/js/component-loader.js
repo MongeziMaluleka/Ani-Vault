@@ -1,6 +1,7 @@
 const components = [
   { id: "navbar-container", path: "../src/components/navbar.html" },
   { id: "home-section-container", path: "../src/components/home-section.html" },
+  { id: "featured-container", path: "../src/components/featured-section.html" },
   { id: "search-section-container", path: "../src/components/search-section.html" },
   { id: "my-lists-section-container", path: "../src/components/my-lists-section.html" },
   { id: "about-section-container", path: "../src/components/about-section.html" },
