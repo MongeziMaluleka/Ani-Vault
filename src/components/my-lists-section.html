@@ -1,0 +1,78 @@
+<section id="my-lists-section" class="hidden mb-12">
+    <h1 class="text-3xl font-bold text-white mb-6">My Lists</h1>
+
+    <!-- List Tabs -->
+    <div class="mb-6 border-b border-slate-700">
+        <div class="flex flex-wrap -mb-px">
+            <button id="watching-tab" class="tab-button inline-block py-4 px-6 text-center border-b-2 border-red-500 text-red-500 font-medium">
+                <i class="fas fa-play-circle mr-2"></i>Watching
+            </button>
+            <button id="completed-tab" class="tab-button inline-block py-4 px-6 text-center border-b-2 border-transparent text-slate-400 hover:text-slate-300 font-medium">
+                <i class="fas fa-check-circle mr-2"></i>Completed
+            </button>
+            <button id="plan-to-watch-tab" class="tab-button inline-block py-4 px-6 text-center border-b-2 border-transparent text-slate-400 hover:text-slate-300 font-medium">
+                <i class="fas fa-clock mr-2"></i>Plan to Watch
+            </button>
+        </div>
+    </div>
+
+    <!-- List Content -->
+    <div id="list-content">
+        <!-- Watching List -->
+        <div id="watching-content" class="list-content">
+            <div id="watching-list" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <!-- Will be populated with user's watching list -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="watching-empty" class="py-10 text-center">
+                <div class="text-5xl mb-4 text-slate-500">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-2">Your watching list is empty</h3>
+                <p class="text-slate-400 mb-4">Start adding anime you're currently watching</p>
+                <button id="browse-anime-btn" class="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition-colors">
+                    Browse Anime
+                </button>
+            </div>
+        </div>
+
+        <!-- Completed List -->
+        <div id="completed-content" class="list-content hidden">
+            <div id="completed-list" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <!-- Will be populated with user's completed list -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="completed-empty" class="py-10 text-center">
+                <div class="text-5xl mb-4 text-slate-500">
+                    <i class="fas fa-check-double"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-2">Your completed list is empty</h3>
+                <p class="text-slate-400 mb-4">Add anime you've finished watching</p>
+                <button class="browse-anime-btn bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition-colors">
+                    Browse Anime
+                </button>
+            </div>
+        </div>
+
+        <!-- Plan to Watch List -->
+        <div id="plan-to-watch-content" class="list-content hidden">
+            <div id="plan-to-watch-list" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <!-- Will be populated with user's plan to watch list -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="plan-to-watch-empty" class="py-10 text-center">
+                <div class="text-5xl mb-4 text-slate-500">
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <h3 class="text-xl font-medium text-white mb-2">Your plan to watch list is empty</h3>
+                <p class="text-slate-400 mb-4">Add anime you want to watch in the future</p>
+                <button class="browse-anime-btn bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition-colors">
+                    Browse Anime
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
